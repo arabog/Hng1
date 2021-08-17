@@ -1,0 +1,136 @@
+*{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+body {
+          overflow-x: hidden;
+}
+
+header {
+          position: sticky;
+          top: 0;
+          left: 0;
+          z-index: 100;
+}
+
+.logo {
+          color: blueviolet;
+          font-size: 25px;
+          cursor: pointer;
+          font-weight: bold;
+}
+
+.logo a {
+          text-decoration: none;
+}
+
+.nav {
+          width: 100vw;
+          height: 55px;
+          background: #fff;
+}
+ 
+.nav {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+}
+.nav-list {
+          display: flex;
+          list-style: none;
+}
+
+.nav-link {
+          text-decoration: none;
+          padding: 0 25px;
+          color: blueviolet;
+}
+
+/* hero */
+.hero {
+          background: url(work1.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100vh;
+          width: 100vw;
+          
+
+          display: flex;
+          align-items: center;
+          justify-content: center;         
+}
+
+.hero h1{
+          font-size: 50px;
+          color: blueviolet;
+          text-align: center;
+}
+
+main {
+          padding: 20px;
+}
+
+main h1, h2, h3 {
+          font-size: 20px;
+          text-align: center;
+          margin: 20px 0;
+}
+
+main p {
+          margin: 20px 0;
+}
+
+h3 + ul > b li {
+          list-style: none;
+          font-style: italic;
+}
+
+.grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.5rem;
+          margin: 20px 0;
+}
+
+.grid > div a {
+          text-decoration: none;
+}
+
+.author {
+          display: flex;
+          justify-content: end;
+          color: blueviolet;
+          font-size: 20px;
+          font-style: bold;
+          margin: 15px 0;
+}
+
+@media screen and (min-width: 720px) {
+          section {
+                    display: flex;
+                    text-align: left;
+                    justify-content: left;
+          }
+
+          section p {
+                    padding: 0 5px;
+                    margin-right: 7.5px;
+                    flex: 1;
+          }
+
+          b{
+                    display: flex;
+                    flex-direction: column;
+                    /* align-items: right;
+                    justify-content: center; */
+                    text-align: center;
+          }
+
+          .link {
+                    /* display: flex;
+                    justify-content: center; */
+                    text-align: center;
+          }
+}
